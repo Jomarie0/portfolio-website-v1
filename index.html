@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+</head>
+<body id="body">
+    <section id="home">
+        <nav class="home_navBar">
+            <div class="logo_container">
+                <a href="#home"><img src="logo.png" alt="" class="home_nav_logo"></a>
+                <!-- <h3>Logo</h3> -->
+            </div>
+            <ul class="home_navigation_container">
+                <li><a class="home_nav_btn" href="#home">Home</a></li>
+                <li><a class="home_nav_btn" href="#About">About</a></li>
+                <li><a class="home_nav_btn" href="#Projects">Projects</a></li>
+                <li><a class="home_nav_btn" href="#Contacts">Contact</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="dropbtn"><img src="hamburger_icon.webp" alt="Menu" class="hamburger_icon"></button>
+                <div class="dropdown_content">
+                    <a class="home_nav_btn" href="#home">Home</a>
+                    <a class="home_nav_btn" href="#About">About</a>
+                    <a class="home_nav_btn" href="#Projects">Works</a>
+                    <a class="home_nav_btn" href="#Contacts">Contact</a>
+                </div>
+            </div>  
+            
+        </nav>
+    </section>
+    <section id="hero_sec">
+        <div class="hero_sec__container">
+            <div class="hero_sec__img_container">
+                <img src="hero-sec-img.jpg" 
+                alt="picture to"
+                class="hero_sec_img">
+            </div>
+            <div class="hero_sec__info_container">
+                <div class="hero_sec_details_container">
+                    <div>
+                        <h3 class="hero_sec_text__HI">Hi, I'm,</h3>
+                    </div>
+                    <div>
+                        <h1 class="hero_sec_text__Name"><span class="name">Jomarie Roperez</span></h1>
+                    </div>
+                    <div>
+                        <h2 class="hero_sec_text__job">A Web Designer</h2>
+                    </div>
+                </div>
+                <div class="hero_sec_btn_container">
+                    <a class="hero_sec_btns" href="https://jomarie0.github.io/online-resume/" target="_blank" >Download Cv</a>
+                    <button class="hero_sec_btns" onclick="location.href='#About'">More About Me</button>
+                </div>
+                <div>
+                    <p class="Find_Me_On_text">Find Me On</p>
+                    <div class="Find_Me_On_container">
+                        <a href="" class="find_me_on_btns">
+                            <img src="Facebook-logo.png" alt="" class="FindMeOn_icons">    
+                        <a href="" class="find_me_on_btns">
+                            <img src="Gmail-logo.png" alt="" class="FindMeOn_icons">
+                        </a>
+                        <a href="" class="find_me_on_btns">
+                            <img src="github-logo.png" alt="" class="FindMeOn_icons">
+                        </a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+<!-- ========================= ABOUT SECTION ========================= -->
+    <section id="About">
+        <p class="intro_to_section_text">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="about_sec_container">
+
+            <div class="about_sec_img_container">
+                <img src="about-sec-img.jpg" alt="" class="about_sec_img">
+            </div>
+
+            <div class="about_sec_info_container">
+
+                <div class="about_sec_ExpEdu_container">
+                    <div class="about_sec_Info">
+                        <h1>Experience</h1>
+                        <p>+2 years in Python Environment</p>
+                    </div>
+                    <div class="about_sec_Info">
+                        <h1>Education</h1>
+                        <p>2nd Year IT Student At DLL </p>
+                    </div>
+                </div>
+
+                <div class="about_sec_description_container">
+                    <div class="about_sec_description">
+                        <p class="about_sec_text">
+                        Hello! I'm Jomarie Roperez, a 19-year-old IT student at 
+                        Dalubhasaan ng lungsod ng Lucena(DLL) and An aspiring Future 
+                        Web Designer With a passion for blending art with technology 
+                        to create beautiful and user friendly websites. Join me on 
+                        my journey to shape the Future of web design!
+                        </p>
+
+                    </div>
+                </div>
+                <a class="About_sec_See_More_btn" href="#Experience">See More</a>
+
+            </div>
+        </div>
+        
+        
+    </section>
+<!-- ========================= Experience SECTION ========================= -->
+    <section id="Experience">
+        <p class="intro_to_section_text">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience_container">
+            <div class="experience_language_container">
+                <div id="HTML_info" class="experience_info" onmouseover="HTML_mOver(this)" onmouseout="HTML_mOut(this)">
+                    <img src="HTML-logo.png" alt="" class="experience_logo_img"> 
+                    <div class="experience_text_container">
+                        <h1 class="experience_text_title">HTML</h1>
+                        <p class="experience_text_subtitle">Average</p>
+                        <p id="HTML_text"></p>
+                    </div>
+                </div>
+
+                <div id="CSS_info" class="experience_info" onmouseover="CSS_mOver(this)" onmouseout="CSS_mOut(this)">
+                    <img src="CSS-logo.png" alt="" class="experience_logo_img"> 
+                    <div class="experience_text_container">
+                        <h1 class="experience_text_title">CSS</h1>
+                        <p class="experience_text_subtitle">Average</p>
+                        <p id="CSS_text"></p>
+                    </div>
+                </div>
+
+                <div id="JS_info" class="experience_info" onmouseover="JS_mOver(this)" onmouseout="JS_mOut(this)">
+                    <img src="JS-logo.png" alt="" class="experience_logo_img"> 
+                    <div class="experience_text_container">
+                        <h1 class="experience_text_title">JavaScript</h1>
+                        <p class="experience_text_subtitle">Beginner</p>
+                        <p id="JS_text"></p>
+                    </div>
+                </div>
+                <div id="PY_info" class="experience_info" onmouseover="PY_mOver(this)" onmouseout="PY_mOut(this)">
+                    <img src="Python_logo.png" alt="" class="experience_logo_img"> 
+                    <div class="experience_text_container">
+                        <h1 class="experience_text_title">Python</h1>
+                        <p class="experience_text_subtitle">Average</p>
+                        <p id="PY_text"></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="Projects">
+        <p class="intro_to_section_text">Browse My Recents</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects_Container">
+            <div class="Project_list_container">
+                <div class="project_info">
+                    <img src="project1.png" alt="" class="project_img">
+                    <h1>Project 1</h1>
+                    <p class="project_info_text">
+                        Portfolio Website Design Using FIGMA
+                    </p>
+                    <a 
+                        href="https://www.figma.com/proto/HQyWaOH8mJJZpodza8SEBk/Portfolio_Website_Wiremap_Roperez?node-id=1-2&t=iaEGjhZgaskY60BB-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" 
+                        target="_blank" 
+                        class="project_demo_btn">
+                        
+                        Demo
+                    </a>
+                </div>
+                <div class="project_info">
+                    <img src="Project2.png" alt="" class="project_img">
+                    <h1>Project 2</h1>
+                    <p class="project_info_text">
+                        Responsive online Resume
+                    </p>
+                    <a 
+                        href="https://jomarie0.github.io/online-resume/" 
+                        target="_blank" 
+                        class="project_demo_btn">
+
+                        Demo
+                    </a>                
+                </div>
+            </div>
+            <div class="Project_list_container">
+                <div class="project_info">
+                    <img src="project3.png" alt="" class="project_img">
+                    <h1>Project 3</h1>
+                    <p class="project_info_text">
+                        Calculator App
+                    </p>
+                    <a href="https://jomarie0.github.io/ipt101-calculator-app-prototype/" target="_blank" class="project_demo_btn">Demo</a>
+                </div>
+                <div class="project_info">
+                    <img src="planks.jpg" alt="" class="project_img">
+                    <h1>Project 4</h1>
+                    <p class="project_info_text">
+                        Random Rock-Paper-Scissor Game
+                    </p>
+                    <a href="https://jomarie0.github.io/rock-paper-scissor/ " target="_blank" class="project_demo_btn">Demo</a>
+                    
+                </div>     
+            </div>
+            <!-- <div class="Project_list_container">
+                <div class="project_info">
+                    <img src="planks.jpg" alt="" class="project_img">
+                    <h1>Project 5</h1>
+                    <p class="project_info_text">
+                        Functional Calculator App w/ JavaScript
+
+                    </p>
+                    <a href="https://jomarie0.github.io/online-resume/" target="_blank" class="project_demo_btn">Demo</a>
+                </div>
+                <div class="project_info">
+                    <img src="planks.jpg" alt="" class="project_img">
+                    <h1>Project 6</h1>
+                    <p class="project_info_text">
+                        Rock-Paper-Scissor Game using DOM Manipulation.
+                    </p>
+                    <a href="https://jomarie0.github.io/online-resume/" target="_blank" class="project_demo_btn">Demo</a>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section id="Contacts">
+        <p class="intro_to_section_text">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <br>
+        <div class="contact_container">
+            <div class="contact_detail_container">
+                <div class="contact_details">
+                    <img src="Gmail-logo.png" alt="" class="contact_link_img">
+                    <p class="contact_text">roperezjomarie@gmail.com</p>
+                </div>
+                <div class="contact_details">
+                    <img src="Facebook-logo.png" alt="" class="contact_link_img">
+                    <a href="">LinkedIn</a>
+                </div>
+            </div>
+            <div class="contact_nav">
+                <ul class="contact_navigation_container">
+                    <li><a class="contact_nav_btn" href="#home">Home</a></li>
+                    <li><a class="contact_nav_btn" href="#About">About</a></li>
+                    <li><a class="contact_nav_btn" href="#Projects">Works</a></li>
+                    <li><a class="contact_nav_btn" href="#Contacts">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+    <p>Copyright © 2024 <span class="name">JomarieRoperez</span>. All Rights Reserved.</p>
+</section>
+    <script>
+        function HTML_mOver(obj) {
+            document.getElementById('HTML_text').innerHTML = "I have an average level of experience with HTML, having used it extensively in my projects to structure web content effectively."
+            document.getElementById('HTML_info').style.backgroundColor = "rgba(150, 98, 29, 0.499)"
+            document.getElementById('HTML_info').style.transition = "0.5s"
+            
+        }
+        function HTML_mOut(obj) {
+            document.getElementById('HTML_text').innerHTML = ""
+            document.getElementById('HTML_info').style.backgroundColor = "#FFF8F3"
+
+        }
+        function CSS_mOver(obj) {
+            document.getElementById('CSS_text').innerHTML = "My experience with CSS is Average, enabling me to style and design web pages to be cisually appealing and user-friendly."
+            document.getElementById('CSS_info').style.backgroundColor = "rgba(29, 150, 150, 0.499)"
+            document.getElementById('CSS_info').style.transition = "0.5s"
+
+        }
+        function CSS_mOut(obj) {
+            document.getElementById('CSS_text').innerHTML = ""
+            document.getElementById('CSS_info').style.backgroundColor = "#FFF8F3"
+
+        }
+
+        function JS_mOver(obj) {
+            document.getElementById('JS_text').innerHTML = "As a beginner in JavaScript, I am eager to enhance my skills in adding interaticity and dynamic features to web pages."
+            document.getElementById('JS_info').style.backgroundColor = "rgba(146, 150, 29, 0.499)"
+            // document.getElementById('JS_info').style.color = "#1b1b1b"
+            document.getElementById('JS_info').style.transition = "0.5s"
+
+            
+        }
+        function JS_mOut(obj) {
+            document.getElementById('JS_text').innerHTML = ""
+            document.getElementById('JS_info').style.backgroundColor = "#FFF8F3"
+
+        }
+        function PY_mOver(obj) {
+            document.getElementById('PY_text').innerHTML = "My Python Skills are at an average level primarily focusing on scripting and automation."
+            document.getElementById('PY_info').style.backgroundColor = "rgba(70, 118, 30, 0.499)"
+            document.getElementById('PY_info').style.transition = "0.5s"
+
+        }
+        function PY_mOut(obj) {
+            document.getElementById('PY_text').innerHTML = ""
+            document.getElementById('PY_info').style.backgroundColor = "#FFF8F3"
+
+        }
+    </script>
+</body>
+</html>
